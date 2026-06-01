@@ -1,0 +1,1 @@
+SELECT COUNT(r.resource_id) as Number_of_resources,e.title from Resources r join Events e on r.event_id =e.event_id group by e.event_id,e.title;

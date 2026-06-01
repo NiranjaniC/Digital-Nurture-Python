@@ -1,0 +1,1 @@
+SELECT e.title,COUNT(session_id) AS session_count FROM sessions s JOIN Events e on s.event_id =e.event_id where TIME(s.start_time) BETWEEN "10:00:00" AND "12:00:00"  GROUP BY e.event_id,e.title;

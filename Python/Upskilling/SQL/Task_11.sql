@@ -1,0 +1,1 @@
+SELECT registration_date,COUNT(user_id) as user_count from users  where registration_date >= date_sub(CURDATE(),INTERVAL 7 DAY) group by registration_date order by registration_date;

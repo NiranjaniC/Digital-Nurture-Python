@@ -1,0 +1,1 @@
+ SELECT e.title from Events e join Registrations r on e.event_id = r.event_id left join feedback f on e.event_id = f.event_id where  f.feedback_id is null;

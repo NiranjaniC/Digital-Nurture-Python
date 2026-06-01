@@ -1,0 +1,1 @@
+SELECT u.full_name , e.status,count(e.event_id) from events e join users u on e.organizer_id = u.user_id group by u.full_name,e.status;

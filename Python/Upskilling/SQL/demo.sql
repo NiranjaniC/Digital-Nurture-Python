@@ -1,0 +1,1 @@
+SELECT u.full_name,e.title,r.registration_date FROM Users u JOIN Registrations r on  u.user_id=r.user_id JOIN Events e on r.event_id = e.event_id WHERE e.status='completed' ORDER BY r.registration_date;
