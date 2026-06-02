@@ -1,0 +1,1 @@
+SELECT  e.title,count(r.registration_id) as registration_count from events e join registrations r on e.event_id = r.event_id group by e.title order by registration_count desc limit 3;

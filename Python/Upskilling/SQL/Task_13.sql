@@ -1,0 +1,1 @@
+select e.city,avg(f.rating) as avg_rating from feedback f  join events e on f.event_id = e.event_id group by e.city;
